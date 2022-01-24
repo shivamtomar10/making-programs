@@ -75,6 +75,10 @@ int main()
         {
             cout<<main();           //to reapeat the program
         }
+        else
+        {
+            cout<<"THANKS FOR USING IT";
+        }
 
 
     return (0);
