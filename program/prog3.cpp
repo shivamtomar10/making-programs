@@ -12,7 +12,7 @@ int main()
     cin>>x;
     if(x==1 || x==2)
     {
-        cout<<"Eter the number of rows to be ther in pyramid:";
+        cout<<"Eter the number of rows to be their in pyramid:";
         int a=0;
         cin>>a;
         switch(x)

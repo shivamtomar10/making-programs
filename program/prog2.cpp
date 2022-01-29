@@ -7,7 +7,7 @@ void invhalf_trian(int x);
 int main()
 {
     cout<<"THIS IS FOR GETTIING HALF TRIANGLE  AND ITS INVERSION WITH SIGN LIKE THIS '*'";
-    cout<<"CHOOSE THE CODE,\n1 FOR HALF TRIANGLE,\n2 FOR ITS INVERSION ";
+    cout<<"\nCHOOSE THE CODE,\n1 FOR HALF TRIANGLE,\n2 FOR ITS INVERSION ";
     int x=0;
     cin>>x;
 
@@ -31,7 +31,7 @@ int main()
     else
     {
         cout<<"YOUR CODE IS WRONG ";
-        cout<<"PLEASE ENTER RIGHT CODE ";
+        cout<<"\nPLEASE ENTER RIGHT CODE ";
 
     }
     cout<<"DO YOU WANT TO CONTINUE ";
