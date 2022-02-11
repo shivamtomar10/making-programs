@@ -80,6 +80,83 @@ int main()
     cout<<"no.of 10's:"<<counte<<endl;
     cout<<"no.of 11's:"<<countf<<endl;
 
+//finding frequency of 000's 001's 010's 011's 100's 101's 110's 111's
+   
+    iter=vec1.begin();
+    int countg=0,counth=0,counti=0,countj=0,countk=0,countl=0,countm=0,countn=0;
+    for(iter;iter!=vec1.end();iter++ )
+    {
+        int x=*iter;
+        int y=*(iter+1);
+        int z=*(iter+2);
+       
+        iter+=2;
+        
+        
+        
+        
+        if(x==0)
+        {
+            if(y==0)
+            {
+                if(z==0)
+                {
+                    countg++;
+                }
+                if(z==1)
+                {
+                    counth++;
+                }
+            }
+            if(y==1)
+            {
+                if(z==0)
+                {
+                    counti++;
+                }
+                if(z==1)
+                {
+                    countj++;
+                }
+                
+            }
+
+        }
+        if(x==1)
+        {
+            if(y==0)
+            {
+                if(z==0)
+                {
+                    countk++;
+                }
+                if(z==1)
+                {
+                    countl++;
+                }
+            }
+            if(y==1)
+            {
+                if(z==0)
+                {
+                    countm++;
+                }
+                if(z==1)
+                {
+                    countn++;
+                }
+            }
+            
+        }
+    }
+    cout<<"no of 000's:"<<countg<<endl;
+    cout<<"no of 001's:"<<counth<<endl;
+    cout<<"no of 010's:"<<counti<<endl;
+    cout<<"no of 011's:"<<countj<<endl;
+    cout<<"no of 100's:"<<countk<<endl;
+    cout<<"no of 101's:"<<countl<<endl;
+    cout<<"no of 110's:"<<countm<<endl;
+    cout<<"no of 111's:"<<countn<<endl;
 
    
 
