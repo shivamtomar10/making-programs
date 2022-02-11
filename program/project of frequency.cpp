@@ -38,6 +38,48 @@ int main()
     cout << "NO.OF 0's:" << countb << endl;
     cout << "NO.OF 1's:" << counta;
 
+     //finding frequency of 00's , 01's , 10's and 11's
+    iter=vec1.begin();
+    int countc=0,countd=0,counte=0,countf=0;
+    
+    for(iter;iter!=vec1.end();iter++)
+    {
+       int x=*iter;
+       int y=*(iter+1);
+       
+       iter++;
+       
+       if(x==0)
+       {
+           if(y==0)
+           {
+               countc++;
+           }
+           if(y==1)
+           {
+               countd++;
+
+           }
+
+       }
+       if(x==1)
+       {
+           if(y==0)
+           {
+               counte++;
+           }
+           if(y==1)
+           {
+               countf++;
+           }
+       }
+
+    }
+    cout<<"no.of 00's:"<<countc<<endl;
+    cout<<"no.of 01's:"<<countd<<endl;
+    cout<<"no.of 10's:"<<counte<<endl;
+    cout<<"no.of 11's:"<<countf<<endl;
+
 
    
 
