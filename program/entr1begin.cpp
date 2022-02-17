@@ -38,10 +38,10 @@ int main()
         
     }
    
-    p1=counta/(x/2);
-    p2=countb/(x/2);
-    q1=log(p1);
-    q2=log(p2);
+    p1=counta/x;
+    p2=countb/x;
+    q1=log2f(p1);
+    q2=log2f(p2);
     s1=-(p1*q1+p2*q2);
     cout<<"Entropy of first list is:"<<s1<<endl;
 
@@ -61,10 +61,10 @@ int main()
         }
         
     }
-    a1=countc/(x/2);
-    a2=countd/(x/2);
-    b1=log(a1);
-    b2=log(a2);
+    a1=countc/x;
+    a2=countd/x;
+    b1=log2f(a1);
+    b2=log2f(a2);
     s2=-(a1*b1+a2*b2);
 
     cout<<"Entropy of second list is:"<<s2<<endl;
@@ -85,8 +85,8 @@ int main()
     }
     A1=counte/x;
     A2=countf/x;
-    B1=log(A1);
-    B2=log(A2);
+    B1=log2f(A1);
+    B2=log2f(A2);
     S=-(A1*B1+A2*B2);
     cout<<"Entropy of whole list:"<<S<<endl;
     if((s1+s2)==S)
