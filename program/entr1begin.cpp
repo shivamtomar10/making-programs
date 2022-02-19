@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     cout<<"Enter the length of binary string:";
-    int x;
+    double x;
     cin>>x;
     list<int> list1,list2;
     int y,counta=0,countb=0;
@@ -38,8 +38,8 @@ int main()
         
     }
    
-    p1=counta/x;
-    p2=countb/x;
+    p1=counta/(x/2);
+    p2=countb/(x/2);
     q1=log2f(p1);
     q2=log2f(p2);
     s1=-(p1*q1+p2*q2);
@@ -61,8 +61,8 @@ int main()
         }
         
     }
-    a1=countc/x;
-    a2=countd/x;
+    a1=countc/(x/2);
+    a2=countd/(x/2);
     b1=log2f(a1);
     b2=log2f(a2);
     s2=-(a1*b1+a2*b2);
