@@ -1,0 +1,29 @@
+
+
+ADDING BOOK DETAILS:
+ID_OF_BOOK:1000
+NAME_OF_THE_BOOK:math
+NO_OF_COPIES:19
+
+ISSUING DETAILS:
+roll_no_of_student:20211455
+name_of_student:shivam tomar
+ID_OF_BOOK:1000
+name_of_book:math
+Date of issued:5/6/2022
+
+ISSUING DETAILS:
+roll_no_of_student:2094567
+name_of_student:sderf
+ID_OF_BOOK:1000
+name_of_book:sedrf
+Date of issued:6/5/2022
+
+RETURN DEATAILS:
+roll_no_of_student:20211455
+name_of_student:shivam tomar
+ID_OF_BOOK:1000
+name_of_book:math
+Date of issued:5/6/2022
+Date of return:16/6/2022
+STUDENT STATUS:DEFAULTER
