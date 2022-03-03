@@ -30,12 +30,13 @@ int main()
     // }
     // cout<<"shivam3"<<endl;
 
-    string* p1=arr;
+    string* p1=&arr[len-1];
     string arr1[len+1];
-    for(int i=len-1;i>=0;i--)
+    for(int i=0;i<len;i++)
     {
-        arr1[i]=*(p1+i);
+        arr1[i]=*(p1);
         // cout<<arr1[i]<<endl;
+        p1--;
     }
     for(int i=0;i<len;i++)
     {
