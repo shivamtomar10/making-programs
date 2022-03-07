@@ -1,0 +1,25 @@
+Roll No:1
+Name:shivam tomar
+class:6
+Year:2022
+Total marks:99
+Roll No:2
+Name:anshu tomar
+class:7
+Year:2022
+Total marks:90
+Roll No:3
+Name:riya tomar
+class:8
+Year:2019
+Total marks:93
+Roll No:4
+Name:dinesh tomar
+class:11
+Year:2020
+Total marks:87
+Roll No:5
+Name:renu tomar
+class:12
+Year:2021
+Total marks:88
