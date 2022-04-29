@@ -1,12 +1,20 @@
 import java.util.Scanner;
 public class CheckPrime {
     public static int isPrime(int a){
+        if(a<0 ||a==0)
+        {
+            if(a!=0 && a<0)
+            System.out.println("negative values as input is not possible");
+            return 0;
+        }
+        else{
         for(int i=2;i<a;i++){
             if(a%i==0){
                 return 0;
             }
         }
         return 1;
+    }
     }
     public static void main(String[] args ){
         Scanner sc =new Scanner(System.in);
