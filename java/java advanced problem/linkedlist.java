@@ -36,8 +36,7 @@ public class LinkedList{
        
         
         Node head=new Node();
-        Node ptr =new Node();
-        ptr=head;
+        Node ptr=head;
         int p=1;
         while(a>0){
             Node n1=new Node();
