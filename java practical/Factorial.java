@@ -1,33 +1,32 @@
+
+// SECOND PROGRAM OF JAVA PRACTICAL
+
 import java.util.Scanner;
 public class Factorial {
-    // function for the factorial
-    public static void factor1(int a){
-        if(a<0){
-            System.out.println("the factorial of negative number is not possible");
-            
+    public static int factorialOfNumber(int n){
+        if(n==1 || n==0){
+            return 1;
         }
-        else{
-
-        
-        int p=1;
-        for(int i=a;i!=0;i--){
-            p*=i;
-        }
-        System.out.println("The factorial of the number "+a+" is:"+p);
+        return n*factorialOfNumber(n-1);        // through recursion we find factorial of a number
     }
-}
-    public static void main(String [] args){
-        Scanner sc= new Scanner(System.in); // creating refrence of Scanner Class
-        System.out.println("Enter your number for factorial ");
+    public static void main(String [] args) throws Exception{
+        Scanner sc=new Scanner (System.in);
+        System.out.print("Enter the number for its factorial:");
         try{
-        int a =sc.nextInt();    // taking input and check for error in input 
-        factor1(a);
+            int a=sc.nextInt();
+            if(a<0){
+                throw new Exception("Your input must be zero or positive Integers!");
+            }
+            else{
+                int h=factorialOfNumber(a);
+                System.out.println("The factorial of the input number '"+a+"' is:"+h);
+            }
         }
         catch(Exception e){
-            System.out.println("Your Input is invalid!"); // catch if error comes
+            System.out.println(e);
         }
         finally{
-            sc.close();  // closing Scanner refrence in finally block
+            sc.close();
         }
     }
     

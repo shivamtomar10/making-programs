@@ -1,37 +1,38 @@
+
+//NINETEEN PROGRAM OF JAVA PRACTICAL
+
+
 import java.util.Scanner;
 public class NestedTry {
     public static void main(String [] args){
         Scanner sc=new Scanner (System.in);
-        // As we want user to enter only positive values for division greater than 0
         try{
-            System.out.println("Enter the First value : ");
+            System.out.print("Enter your id:");
             int a=sc.nextInt();
-            System.out.println("Enter the second value:");
-            int b=sc.nextInt();
-            if(a<0 || b<0){
-                throw new Exception();
-            }
+
+            System.out.print("Enter your name:");
+            String s=sc.next();
+            // System.out.println("s:"+s+" "+j);
+
             try{
-                if(a==0 ||b==0){
-                    throw new Exception ();
+                if(a==0){
+                    throw new Exception("You cannot enter default values");
                 }
-                System.out.println("The division of two number is:"+a/b);
+
+                System.out.println("Your id:"+a+"\n"+"Your name:"+s);
+                System.out.println("Thankyou for entering your information , have a nice day.");
             }
-
-
             catch(Exception e){
                 System.out.println(e);
-                System.out.println("Either of first or second is zero");
             }
         }
         catch(Exception e){
             System.out.println(e);
-            System.out.println("Either of first or second is negative");
-
         }
         finally{
             sc.close();
         }
+
     }
     
 }
